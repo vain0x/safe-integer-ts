@@ -2,6 +2,7 @@
   "name": "safe-integer-ts",
   "version": "1.0.0",
   "description": "Newtype wrapper of number type as safe-integer (53-bit precise integer)",
+  "homepage": "https://github.com/vain0x/safe-integer-ts/tree/master/safe-integer-ts",
   "main": "target/index.js",
   "repository": {
     "type": "git",
