@@ -45,3 +45,24 @@ const useSafeInteger = (_value: SafeInteger) => {
     }
 }
 ```
+
+## Type-safety
+
+```ts
+import { SafeInteger, isSafeInteger } from "safe-integer-ts"
+
+const useNumber = (_value: number) => {}
+const useSafeInteger = (_value: SafeInteger) => {}
+
+const value = NaN
+if (isSafeInteger(value)) {
+    // OK: SafeInteger -> SafeInteger
+    useSafeInteger(value)
+
+    // OK: SafeInteger -> number
+    useNumber(value)
+}
+
+useSafeInteger(value)
+//             ^^^^^ NG: number is not SafeInteger
+```
