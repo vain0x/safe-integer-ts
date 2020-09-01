@@ -1,0 +1,28 @@
+{
+  "name": "safe-integer-ts",
+  "version": "1.0.0",
+  "description": "Newtype wrapper of number type as safe-integer (53-bit precise integer)",
+  "main": "target/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vain0x/safe-integer-ts"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "test": "npm run build && mocha target/index.test.js"
+  },
+  "keywords": [
+    "newtype",
+    "safe-integer",
+    "safe integer",
+    "int53",
+    "i53"
+  ],
+  "author": "vain0x <vainzerox@gmail.com>",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "@types/node": "^14.6.2",
+    "mocha": "^8.1.3",
+    "typescript": "^4.0.2"
+  }
+}

@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -eu
+
+# Install dependencies if necessary.
+test -d node_modules || npm ci
+# Initial compilation to avoid crashing mocha.
+test -d target || npx tsc -b
+
+# Watch for compilation.
+npx tsc -b --preserveWatchOutput --watch &
+# Watch for testing.
+npx mocha target/index.test.js --reporter dot --watch &
+wait

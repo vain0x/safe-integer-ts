@@ -1,0 +1,6 @@
+.editorconfig
+.vscode
+src/*test.ts
+target/**.test.d.ts
+target/**.test.js
+target/**.test.js.map

@@ -1,0 +1,16 @@
+{
+    "files.watcherExclude": {
+        "**/.git/**": true,
+        "**/.hg/**": true,
+        "**/node_modules/**": true,
+        "**/target/**": true
+    },
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "[typescript]": {
+        "editor.formatOnSave": true
+    },
+    "[typescriptreact]": {
+        "editor.formatOnSave": true
+    }
+}
