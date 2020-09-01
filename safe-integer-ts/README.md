@@ -4,6 +4,12 @@ Provides `SafeInteger` type, a newtype wrapper of `number` as [safe-integer](htt
 
 See [the implementations](src/index.ts) for more details.
 
+## Install
+
+```sh
+npm install safe-integer-ts
+```
+
 ## Example
 
 ```ts
@@ -38,11 +44,4 @@ const useSafeInteger = (_value: SafeInteger) => {
         useSafeInteger(value)
     }
 }
-```
-
-### ES module
-
-```ts
-import ... from "safe-integer-ts/esm"
-//                              ^^^^
 ```
