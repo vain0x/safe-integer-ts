@@ -2,7 +2,7 @@
 
 Provides `SafeInteger` type, a newtype wrapper of `number` as [safe-integer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isSafeInteger) or 53-bit precise integer.
 
-See [the implementations](src/index.ts) for more details.
+See the implementations (src/index.ts) for more details.
 
 ## Install
 
